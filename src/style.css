@@ -1,0 +1,138 @@
+.ymaps-2-1-79-hint {
+  font-size: 12px;
+  background-color: #e03333;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  box-shadow: none !important;
+}
+.marker {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+.marker__price {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -50px;
+  width: 100px;
+  font-size: 12px;
+  background-color: #e03333;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  box-shadow: none !important;
+}
+.ymaps-2-1-79-hint__text {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.hint__content {
+  padding: 4px !important;
+  display: flex;
+}
+.hint__flats-amount {
+  margin-right: 4px;
+  background-color: white;
+  color: grey;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ymaps-2-1-79-balloon {
+  border-radius: 12px;
+  padding: 0;
+}
+.ymaps-2-1-79-balloon__layout {
+  font-size: 16px;
+  background-color: #fff;
+  color: black;
+  border-radius: 12px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+.ymaps-2-1-79-balloon__content {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: fit-content;
+}
+.ymaps-2-1-79-balloon__close-button {
+  width: 30px !important;
+  height: 30px !important;
+  margin: 7px 10px 0 0;
+}
+.ymaps-2-1-79-hint-overlay {
+  display: block !important;
+}
+.balloon__header {
+  font-size: 18px;
+  background-color: rgb(249, 248, 247);
+  padding: 12px;
+  border-bottom: 1px solid #cfcfcf;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.balloon__flat {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  align-items: center;
+  font-size: 14px;
+}
+.balloon__flat:not(:last-child) {
+  border-bottom: 1px solid #cfcfcf;
+}
+.balloon__flat__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+.balloon__flat__info {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.balloon__dot {
+  color: #cfcfcf;
+}
+.balloon__flat__info__price {
+  margin-top: 4px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .ymaps-2-1-79-balloon__close-button {
+    width: 22px !important;
+    height: 22px !important;
+    margin: 7px 10px 0 0;
+  }
+  .balloon__header {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .balloon__flat {
+    padding: 8px;
+  }
+  .balloon__flat__img {
+    width: 40px;
+    height: 40px;
+  }
+  .balloon__flat__info {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  .balloon__flat__info__price {
+    margin-top: 0px;
+  }
+}
