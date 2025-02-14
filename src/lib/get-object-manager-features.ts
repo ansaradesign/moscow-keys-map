@@ -1,5 +1,5 @@
 import { ObjectManagerFeatures } from 'react-yandex-maps';
-import { ResidentialComplex } from '../../model/objects.type';
+import { ResidentialComplex } from '../model/objects.type';
 import {
   balloonContentBuilder,
   markerContentBuilder,

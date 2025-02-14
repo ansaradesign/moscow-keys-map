@@ -1,4 +1,4 @@
-import { Flat, ResidentialComplex } from '../../model/objects.type';
+import { Flat, ResidentialComplex } from '../model/objects.type';
 import Marker from '../assets/marker.svg';
 
 export const priceContentBuilder = (flatsAmount: number, minPrice: string) => {

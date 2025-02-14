@@ -1,4 +1,4 @@
-import { ResidentialComplex } from '../../model/objects.type';
+import { ResidentialComplex } from '../model/objects.type';
 import Building from '../assets/building.jpg';
 
 export const residentialComplexes: ResidentialComplex[] = [
