@@ -1,5 +1,4 @@
-import { ObjectManager, ObjectManagerProps } from 'react-yandex-maps';
-import Marker from '../assets/marker.svg';
+import { ObjectManagerProps } from 'react-yandex-maps';
 
 const center = [55.76, 37.64];
 
@@ -15,25 +14,21 @@ export const ZoomedObjectManagerObjectsOptions: ObjectManagerProps['objects'] = 
 };
 
 export const objectManagerObjectsOptions: ObjectManagerProps['objects'] = {
-  iconLayout: 'default#image',
-  iconImageHref: Marker,
-  iconImageSize: [18, 18],
-  iconImageOffset: [-15, -15],
   ...ZoomedObjectManagerObjectsOptions,
 };
 
-const objectManagerOptions: ObjectManagerProps['options'] = {
+export const objectManagerOptions: ObjectManagerProps['options'] = {
   clusterize: true,
   gridSize: 200,
 };
 
-const objectManagerModules: ObjectManagerProps['modules'] = [
+export const objectManagerModules: ObjectManagerProps['modules'] = [
   'objectManager.addon.objectsBalloon',
   'objectManager.addon.objectsHint',
 ];
 
-const objectManagerClusters: ObjectManagerProps['clusters'] = {
-  preset: 'islands#redClusterIcons',
+export const objectManagerClusters: ObjectManagerProps['clusters'] = {
+  clusterIconColor: '#C14040',
 };
 
 export const staticObjectManagerProps: ObjectManagerProps = {

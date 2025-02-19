@@ -1,40 +1,108 @@
 import { ResidentialComplex } from '../model/objects.type';
-import Building from '../assets/building.jpg';
 
 export const residentialComplexes: ResidentialComplex[] = [
   {
     id: 0,
     coordinates: [55.78, 37.61],
     house: 'ЖК «Зорге 9»',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQII8RpR0Do2DZqbFogvmXxOFPpr-1gMjTxKQ&s',
     flats: [
-      { rooms: '1', square: 140, floor: 12, maxFloor: 24, price: 320000, img: Building },
-      { rooms: 'Студия', square: 120, floor: 11, maxFloor: 13, price: 140000, img: Building },
-      { rooms: '3', square: 240, floor: 24, maxFloor: 32, price: 540000, img: Building },
+      {
+        rooms: '1',
+        square: 140,
+        floor: 12,
+        maxFloor: 24,
+        price: 320000,
+        img: 'https://cdn.mskguru.ru/uploads/flats/4474/kvartry-v-1468-zhk-presnenskij-val-17-1722492671_839.jpg',
+      },
+      {
+        rooms: 'Студия',
+        square: 120,
+        floor: 11,
+        maxFloor: 13,
+        price: 140000,
+        img: 'https://cdn.mskguru.ru/uploads/news/zhk-prokshino-khorosho-na-novomoskovskom-prostore-a-budet-eshhe-luchshe_l.jpg',
+      },
+      {
+        rooms: '3',
+        square: 240,
+        floor: 24,
+        maxFloor: 32,
+        price: 540000,
+        img: 'https://content.cdn-cian.ru/realty/uploads/froala_editor/images/104820.jpg',
+      },
     ],
   },
   {
     id: 1,
     coordinates: [55.75, 37.62],
     house: 'ЖК «Зорге 4»',
+    img: 'https://cdn.forbes.ru/forbes-static/new/2022/09/Screenshot-2022-09-23-at-13-07-54-copy-632d859b7c4d4.jpg',
     flats: [
-      { rooms: '1', square: 140, floor: 12, maxFloor: 24, price: 320000, img: Building },
-      { rooms: 'Студия', square: 240, floor: 24, maxFloor: 32, price: 540000, img: Building },
+      {
+        rooms: '1',
+        square: 140,
+        floor: 12,
+        maxFloor: 24,
+        price: 320000,
+        img: 'https://cdn.mskguru.ru/uploads/flats/4474/kvartry-v-1468-zhk-presnenskij-val-17-1722492671_839.jpg',
+      },
+      {
+        rooms: 'Студия',
+        square: 240,
+        floor: 24,
+        maxFloor: 32,
+        price: 540000,
+        img: 'https://content.cdn-cian.ru/realty/uploads/froala_editor/images/104820.jpg',
+      },
     ],
   },
   {
     id: 2,
     coordinates: [55.76, 37.64],
     house: 'ЖК «Зорге 1»',
-    flats: [{ rooms: '1', square: 140, floor: 12, maxFloor: 24, price: 320000, img: Building }],
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQII8RpR0Do2DZqbFogvmXxOFPpr-1gMjTxKQ&s',
+    flats: [
+      {
+        rooms: '1',
+        square: 140,
+        floor: 12,
+        maxFloor: 24,
+        price: 320000,
+        img: 'https://cdn.mskguru.ru/uploads/news/zhk-prokshino-khorosho-na-novomoskovskom-prostore-a-budet-eshhe-luchshe_l.jpg',
+      },
+    ],
   },
   {
     id: 3,
     coordinates: [55.765, 37.64],
     house: 'ЖК «Зорге 4»',
+    img: 'https://cdn.forbes.ru/forbes-static/new/2022/09/Screenshot-2022-09-23-at-13-07-54-copy-632d859b7c4d4.jpg',
     flats: [
-      { rooms: '1', square: 140, floor: 12, maxFloor: 24, price: 320000, img: Building },
-      { rooms: 'Студия', square: 120, floor: 11, maxFloor: 13, price: 140000, img: Building },
-      { rooms: '3', square: 240, floor: 24, maxFloor: 32, price: 540000, img: Building },
+      {
+        rooms: '1',
+        square: 140,
+        floor: 12,
+        maxFloor: 24,
+        price: 320000,
+        img: 'https://cdn.mskguru.ru/uploads/flats/4474/kvartry-v-1468-zhk-presnenskij-val-17-1722492671_839.jpg',
+      },
+      {
+        rooms: 'Студия',
+        square: 120,
+        floor: 11,
+        maxFloor: 13,
+        price: 140000,
+        img: 'https://content.cdn-cian.ru/realty/uploads/froala_editor/images/104820.jpg',
+      },
+      {
+        rooms: '3',
+        square: 240,
+        floor: 24,
+        maxFloor: 32,
+        price: 540000,
+        img: 'https://cdn.mskguru.ru/uploads/news/zhk-prokshino-khorosho-na-novomoskovskom-prostore-a-budet-eshhe-luchshe_l.jpg',
+      },
     ],
   },
 ];

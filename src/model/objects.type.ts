@@ -2,6 +2,7 @@ export interface ResidentialComplex {
   id: number;
   coordinates: [number, number];
   house: string;
+  img: string;
   flats: Flat[];
 }
 

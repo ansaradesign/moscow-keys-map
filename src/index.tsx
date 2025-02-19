@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { Map, ObjectManager, YMaps } from 'react-yandex-maps';
-import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useRef, useState } from 'preact/hooks';
 import {
   mapState,
   staticObjectManagerProps,
@@ -45,20 +45,14 @@ export function App() {
         }}
       >
         {!!ymaps && izZoomed && (
-          <>
-            <ObjectManager
-              defaultFeatures={getZoomedObjectManagerFeatures(residentialComplexes, ymaps)}
-              {...staticZoomedObjectManagerProps}
-            />
-            <ObjectManager
-              defaultFeatures={getObjectManagerFeatures(residentialComplexes)}
-              {...staticObjectManagerProps}
-            />
-          </>
-        )}
-        {!!ymaps && !izZoomed && (
           <ObjectManager
-            defaultFeatures={getObjectManagerFeatures(residentialComplexes, true)}
+            defaultFeatures={getZoomedObjectManagerFeatures(residentialComplexes, ymaps)}
+            {...staticZoomedObjectManagerProps}
+          />
+        )}
+        {!!ymaps && (
+          <ObjectManager
+            defaultFeatures={getObjectManagerFeatures(residentialComplexes, ymaps)}
             {...staticObjectManagerProps}
           />
         )}
