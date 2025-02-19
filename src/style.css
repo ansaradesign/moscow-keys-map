@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: 'GilroyMedium';
   src: url('./assets/fonts/gilroy-medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-}
+} */
 
 * {
-  font-family: 'GilroyMedium', sans-serif;
+  font-family: 'Open Sans', Sans-serif;
 }
 
 .marker {
