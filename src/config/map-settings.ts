@@ -19,7 +19,7 @@ export const objectManagerObjectsOptions: ObjectManagerProps['objects'] = {
 
 export const objectManagerOptions: ObjectManagerProps['options'] = {
   clusterize: true,
-  gridSize: 200,
+  gridSize: 80,
 };
 
 export const objectManagerModules: ObjectManagerProps['modules'] = [

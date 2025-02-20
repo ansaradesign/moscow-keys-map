@@ -13,10 +13,11 @@ export const balloonContentBuilder = (flats: Flat[], house: ResidentialComplex['
                 <div class="balloon__flats">
                 ${flats
                   .map(
-                    ({ rooms, square, floor, price, img, maxFloor }) =>
-                      `<div class="balloon__flat">
+                    ({ rooms, square, floor, price, img, maxFloor, link, title }) =>
+                      `<a href="${link}" target="_blank"><div class="balloon__flat">
                     <img src="${img}" class="balloon__flat__img">
                     <div class="balloon__flat__info">
+                        <div class="balloon__flat__title">${title}</div>
                         <div>${isNaN(Number(rooms)) ? rooms : rooms + ' комн.'}
                         <span class="balloon__dot">•</span>
                         ${square} м&sup2;
@@ -27,7 +28,7 @@ export const balloonContentBuilder = (flats: Flat[], house: ResidentialComplex['
                         ${price.toLocaleString('ru-Ru')} ₽/мес.
                         </div>
                     </div>
-                    </div>`,
+                    </div></a>`,
                   )
                   .join('')}</div></div>`;
 };

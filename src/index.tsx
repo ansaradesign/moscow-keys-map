@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { Map, ObjectManager, YMaps } from 'react-yandex-maps';
-import { useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import {
   mapState,
   staticObjectManagerProps,
@@ -12,12 +12,30 @@ import {
   getZoomedObjectManagerFeatures,
 } from './lib/get-object-manager-features';
 import './style.css';
+import { fetchFlats } from './lib/fetch-flats';
+import { exampleFetchData } from './config/example-fetch-data';
+import { formatData } from './lib/format-data';
 
 export function App() {
   const apikey = import.meta.env.VITE_YANDEX_MAPS_API_KEY;
   const mapRef = useRef(null);
   const [ymaps, setYmaps] = useState(null);
   const [izZoomed, setIsZoomed] = useState(false);
+  const [flats, setFlats] = useState([]);
+
+  const getFlats = async () => {
+    const { data, ok, error } = await fetchFlats();
+    if (ok) {
+      setFlats(formatData(data));
+    } else {
+      console.log(error);
+      setFlats(formatData(exampleFetchData));
+    }
+  };
+
+  useEffect(() => {
+    getFlats();
+  }, []);
 
   const handleZoomChange = () => {
     if (mapRef.current) {
@@ -46,13 +64,13 @@ export function App() {
       >
         {!!ymaps && izZoomed && (
           <ObjectManager
-            defaultFeatures={getZoomedObjectManagerFeatures(residentialComplexes, ymaps)}
+            defaultFeatures={getZoomedObjectManagerFeatures(flats, ymaps)}
             {...staticZoomedObjectManagerProps}
           />
         )}
         {!!ymaps && (
           <ObjectManager
-            defaultFeatures={getObjectManagerFeatures(residentialComplexes, ymaps)}
+            defaultFeatures={getObjectManagerFeatures(flats, ymaps)}
             {...staticObjectManagerProps}
           />
         )}

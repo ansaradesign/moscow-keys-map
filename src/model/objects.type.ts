@@ -13,4 +13,6 @@ export interface Flat {
   maxFloor: number;
   price: number;
   img: string;
+  title?: string;
+  link: string;
 }

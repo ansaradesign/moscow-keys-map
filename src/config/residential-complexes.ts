@@ -14,6 +14,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 24,
         price: 320000,
         img: 'https://cdn.mskguru.ru/uploads/flats/4474/kvartry-v-1468-zhk-presnenskij-val-17-1722492671_839.jpg',
+        link: '',
       },
       {
         rooms: 'Студия',
@@ -22,6 +23,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 13,
         price: 140000,
         img: 'https://cdn.mskguru.ru/uploads/news/zhk-prokshino-khorosho-na-novomoskovskom-prostore-a-budet-eshhe-luchshe_l.jpg',
+        link: '',
       },
       {
         rooms: '3',
@@ -30,6 +32,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 32,
         price: 540000,
         img: 'https://content.cdn-cian.ru/realty/uploads/froala_editor/images/104820.jpg',
+        link: '',
       },
     ],
   },
@@ -46,6 +49,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 24,
         price: 320000,
         img: 'https://cdn.mskguru.ru/uploads/flats/4474/kvartry-v-1468-zhk-presnenskij-val-17-1722492671_839.jpg',
+        link: '',
       },
       {
         rooms: 'Студия',
@@ -54,6 +58,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 32,
         price: 540000,
         img: 'https://content.cdn-cian.ru/realty/uploads/froala_editor/images/104820.jpg',
+        link: '',
       },
     ],
   },
@@ -70,6 +75,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 24,
         price: 320000,
         img: 'https://cdn.mskguru.ru/uploads/news/zhk-prokshino-khorosho-na-novomoskovskom-prostore-a-budet-eshhe-luchshe_l.jpg',
+        link: '',
       },
     ],
   },
@@ -86,6 +92,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 24,
         price: 320000,
         img: 'https://cdn.mskguru.ru/uploads/flats/4474/kvartry-v-1468-zhk-presnenskij-val-17-1722492671_839.jpg',
+        link: '',
       },
       {
         rooms: 'Студия',
@@ -94,6 +101,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 13,
         price: 140000,
         img: 'https://content.cdn-cian.ru/realty/uploads/froala_editor/images/104820.jpg',
+        link: '',
       },
       {
         rooms: '3',
@@ -102,6 +110,7 @@ export const residentialComplexes: ResidentialComplex[] = [
         maxFloor: 32,
         price: 540000,
         img: 'https://cdn.mskguru.ru/uploads/news/zhk-prokshino-khorosho-na-novomoskovskom-prostore-a-budet-eshhe-luchshe_l.jpg',
+        link: '',
       },
     ],
   },

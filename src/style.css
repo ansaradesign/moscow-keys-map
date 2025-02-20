@@ -66,6 +66,7 @@
 
 .balloon-content {
   padding: 8px;
+  width: 300px;
 }
 
 .balloon__header {
@@ -80,6 +81,14 @@
 }
 .balloon__flats {
   height: fit-content;
+  height: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.balloon__flats a {
+  text-decoration: none;
+  color: black;
 }
 
 .balloon__flat {
@@ -87,11 +96,15 @@
   display: flex;
   align-items: center;
   font-size: 14px;
-  padding: 10px 0;
+  padding: 16px 0;
 }
 
 .balloon__flat:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.balloon__flat:last-child {
+  padding-bottom: 0px;
 }
 
 .balloon__flat__img {
@@ -104,11 +117,19 @@
   display: flex;
   flex-direction: column;
 }
+
+.balloon__flat__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  display: block;
+}
+
 .balloon__dot {
   color: #cfcfcf;
 }
 .balloon__flat__info__price {
-  margin-top: 4px;
   font-weight: 600;
 }
 
@@ -150,16 +171,12 @@
     height: 22px !important;
     margin: 7px 10px 0 0;
   }
+  .balloon-content {
+    padding: 0;
+  }
   .balloon__header {
     font-size: 16px;
     padding: 8px;
-  }
-  .balloon__flat {
-    padding: 8px;
-  }
-  .balloon__flat__img {
-    width: 40px;
-    height: 40px;
   }
   .balloon__flat__info {
     margin-left: 8px;
@@ -167,5 +184,24 @@
   }
   .balloon__flat__info__price {
     margin-top: 0px;
+  }
+  .balloon__flat__title {
+    margin-bottom: -4px;
+  }
+  .balloon__flat__info__price {
+    margin-top: -4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .balloon-content {
+    width: 280px;
+  }
+  .balloon__flat__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    display: block;
   }
 }
